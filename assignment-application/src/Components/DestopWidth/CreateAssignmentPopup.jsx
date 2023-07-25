@@ -8,7 +8,7 @@ function CreateAssignmentPopup({handleClose,visible  }) {
             <>
              {visible && (
             <div className="popup-container animation-slide-in" >
-        <div style={{margin:"auto",background:"white",width:"40%",position:"fixed",right:"25%",bottom:"10px",borderRadius:"25px"}}>
+        <div style={{margin:"auto",background:"white",width:"40%",position:"fixed",right:"25%",bottom:"6%",borderRadius:"25px"}}>
             <div id="CreateAssigment">
                 <div>Create new assessment</div>
                 <div><img onClick={handleClose} src={cut} alt="" /></div>
