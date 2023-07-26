@@ -885,7 +885,9 @@ background: #FFF;
 width: 345px;
 justify-content: space-between;
 align-items: center;
+animation: slidedown .5s ease-in-out;
 }
+
 .headingP{
   color: var(--text-100, #1C4980);
 font-family: Inter;
@@ -1137,6 +1139,237 @@ line-height: 140%; /* 19.6px */
 align-items: center;
 gap: 10px;
 }
+#CreateAssigmentP{
+  display: flex;
+height: 70px;
+padding: 30px;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+border-radius: 8px 8px 0px 0px;
+border: 1px solid var(--system-stroke-2, #DADCE0);
+background: #FFF;
+}
+#formP{
+  display: flex;
+height: 517px;
+padding: 16px 15px;
+flex-direction: column;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+background: #FFF;
+}
+.nameOfAssessementP{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+}
+.nameOfAssessementP label{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+align-self: stretch;
+color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.nameOfAssessementP input{
+  display: flex;
+  height: 50px;
+  padding: 15px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+border: 1px solid var(--system-stroke-2, #DADCE0);
+background: #FFF;
+}
+#CreateAssigmentP div{
+  color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.purposeOftestP{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.purposeOftestP label{
+ 
+color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+.purposeOftestP select{
+  display: flex;
+  height: 50px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+border: 1px solid var(--system-stroke-2, #DADCE0);
+background: #FFF;
+}
+.DescriptionP{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  
+  align-self: stretch;
+}
+
+.DescriptionP label{
+ 
+color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+.DescriptionP select{
+  display: flex;
+  height: 50px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 8px;
+border: 1px solid var(--system-stroke-2, #DADCE0);
+background: #FFF;
+}
+.SkillsP{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+}
+.SkillsP label{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 4px;
+align-self: stretch;
+color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.box_of_skills{
+  display: flex;
+padding: 16px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+border-radius: 8px 8px 0px 0px;
+border: 1px solid var(--system-divider, #DDE5EA);
+}
+.SkillsP input{
+  display: flex;
+height: 50px;
+padding: 16px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+align-self: stretch;
+border-radius: 0px 0px 8px 8px;
+border: 1px solid var(--system-divider, #DDE5EA);
+color: var(--text-100, #1C4980);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+outline: none;
+}
+.popup-containerP {
+  margin: auto;
+  background: white;
+  width: 100%;
+  position: fixed;
+  right: 25%;
+  bottom: 10px;
+  z-index: 2; /* Higher z-index to display above the overlay */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow to the popup */
+}
+.Submit_divP{
+  display: flex;
+padding: 20px 30px;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 20px;
+align-self: stretch;
+border-radius: 0px 0px 8px 8px;
+border-right: 1px solid var(--system-stroke-2, #DADCE0);
+border-bottom: 1px solid var(--system-stroke-2, #DADCE0);
+border-left: 1px solid var(--system-stroke-2, #DADCE0);
+background: #FFF;
+box-shadow: 0px -4px 50px 0px rgba(0, 0, 0, 0.09);
+}
+#submitP{
+  display: flex;
+  height: 40px;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 8px;
+  background: var(--secondary-1, #0073E6);
+  border: none;
+  color: white;
+  }
+  .popup-container-childP{
+    margin: auto;
+  background: white;
+  width: 75%;
+  position: fixed;
+  right: 10%;
+  bottom: 0;
+  border-radius: 25px;
+  animation: slideup .5s ease-in-out;
+  }
+#mobile_close-Button{
+  display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 60px;
+background: var(--accent-red-light, #FBEBEA);
+}
 @keyframes slideup{
   0%{
     transform: translateY(100%);
@@ -1145,6 +1378,14 @@ gap: 10px;
     transform: translateY(0);
   }
 }
+/* @keyframes slidedown{
+  0%{
+    transform: translateY(0%);
+  }
+  100%{
+    transform: translateY(100%);
+  }
+} */
 
 
 @media screen and (max-width: 550px) {
@@ -1155,4 +1396,20 @@ gap: 10px;
   .normal-view-container{
     display: none;
   }
+}
+
+@keyframes showAnimation {
+  0% {
+    transform: translateY(-10px); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+
+.shifted {
+  animation: showAnimation 1.0s ease; 
 }

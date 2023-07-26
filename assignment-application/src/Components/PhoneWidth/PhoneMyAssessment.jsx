@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useState }from 'react';
 import Search from "../Logo/search.svg";
 import filter from "..//Logo/filter_list_alt.svg";
 import barChart from "../Logo/bar_chart.svg";
@@ -9,11 +9,28 @@ import threedot from "../Logo/3 dot.svg"
 import Link from "../Logo/link.svg"
 import AddButton from "../Logo/add.svg";
 import PhoneAssessmentOverview from './PhoneAssessmentOverview';
+import SubSetDetail from './SubSetDetail';
 function PhoneMyAssessment(props) {
+
+    const [showAssessmentOverview, setShowAssessmentOverview] = useState(false);
+
+   
+    const toggleAssessmentOverview = () => {
+      setShowAssessmentOverview(!showAssessmentOverview);
+    };
+    const [showPopup,setShowPopup] =useState(false);
+
+    const togglePopup =()=>{
+        setShowPopup(!showPopup)
+    }
+    const handleOverlayClick = () => {
+        setShowPopup(false);
+    };
+   
     return (
-        <div id='PhonemainCntainer'>
-            <PhoneAssessmentOverview/>
-            <div className="MyAssessmentSection">
+        <div id='PhonemainCntainer' className={showAssessmentOverview ? 'shifted' : ''}>
+            {showAssessmentOverview && <PhoneAssessmentOverview />}
+            <div className="MyAssessmentSection" >
             
                 <div className="headingP">
                 My Assessment
@@ -24,14 +41,14 @@ function PhoneMyAssessment(props) {
                 <div className="FilterIcon">
                     <img src={filter} alt="" />
                 </div>
-                <div className="BarChatIcon">
+                <div className="BarChatIcon" onClick={toggleAssessmentOverview}>
                     <img src={barChart} alt="" />
                 </div>
             </div>
             <div className="AssessmentConatinerPhone">
             <div className="PNewAssessmentBox">
                         <div className="PaddAssigmnetButton">
-                            <img src={AddButton} alt="" />
+                            <img src={AddButton} alt="" onClick={togglePopup} />
                         </div>
                         <div className="PsubHeadNewAssigemnt">
                             <h4>New Assessment</h4>
@@ -281,6 +298,8 @@ function PhoneMyAssessment(props) {
                 
                 </div>
             </div>
+            {showPopup && <div className="popup-overlay" onClick={handleOverlayClick}></div>}
+            {showPopup && <SubSetDetail handleClose={() => setShowPopup(false)} visible={showPopup}/>}
         </div>
     );
 }
