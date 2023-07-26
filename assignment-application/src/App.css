@@ -836,7 +836,7 @@ background: var(--secondary-5, #F2F8FE);
 }
 .LowerBoxPhone{
   display: flex;
-  width: 376px;
+  width: 375px;
   background: #FFF;
   
 }
@@ -931,6 +931,8 @@ background: #FFF;
 #PhonemainCntainer{
   display: flex;
   width: 375px;
+  justify-content: center;
+  align-items: center;
   padding: 20px 15px;
   flex-direction: column;
   align-items: flex-start;
@@ -1015,7 +1017,7 @@ align-self: stretch;
 }
 
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
   .phone-container{
     display: block;
   }
