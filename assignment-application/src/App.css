@@ -931,12 +931,12 @@ background: #FFF;
 #PhonemainCntainer{
   display: flex;
   width: 100%;
-  margin: auto;
-  justify-content: center;
+
+  justify-content: flex-start;
   align-items: center;
   padding: 20px 15px;
   flex-direction: column;
-  align-items: flex-start;
+
   gap: 20px;
   background: #FFF;
 }
