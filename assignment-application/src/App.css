@@ -36,7 +36,7 @@
   background-color: #0073e6;
  
 }
-.App{
+.normal-view-container{
   display: flex;
 }
 #sideNavbar{
@@ -804,4 +804,223 @@ color: white;
 /* Apply the animation to the popup-container when it's visible */
 .animation-slide-up {
   animation: slideUpFromBottom 0.5s ease;
+}
+.Assessmentphone{
+  display: flex;
+width: 375px;
+height: 50px;
+padding: 0px 15px;
+gap: 20px;
+align-items: center;
+background: #FFF;
+}
+.sidemenubutton{
+  display: flex;
+width: 40px;
+height: 40px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 5px;
+border-radius: 60px;
+background: var(--secondary-5, #F2F8FE);
+}
+.HeadingPhone h3{
+  color: var(--text-100, #1C4980);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%;
+}
+.LowerBoxPhone{
+  display: flex;
+  width: 376px;
+  background: #FFF;
+  
+}
+.myAssessemetPhone{
+  display: flex;
+height: 50px;
+
+padding: 10px 0px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex: 1 0 0;
+border-bottom: 2px solid var(--secondary-1, #0073E6);
+background: #FFF;
+}
+.UnStopAssessemetPhone{
+  display: flex;
+height: 50px;
+
+padding: 10px 0px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex: 1 0 0;
+border-bottom: 2px solid var(--system-background, #F6F8FA);
+background: #FFF;
+}
+.UnStopAssessemetPhone h4{
+  color: var(--text-85, #3E6493);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.myAssessemetPhone h4{
+  color: var(--secondary-1, #0073E6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.MyAssessmentSection{
+  display: flex;
+width: 345px;
+justify-content: space-between;
+align-items: center;
+}
+.headingP{
+  color: var(--text-100, #1C4980);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.searchIcon{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+background: var(--text-white, #FFF);
+}
+.FilterIcon{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+background: var(--text-white, #FFF);
+}
+.BarChatIcon{
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 50px;
+background: #FFF;
+}
+
+#PhonemainCntainer{
+  display: flex;
+  width: 375px;
+  padding: 20px 15px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  background: #FFF;
+}
+.AssessmentConatinerPhone{
+  display: flex;
+width: 345px;
+flex-direction: column;
+align-items: flex-start;
+gap: 15px;
+}
+.PNewAssessmentBox{
+  display: flex;
+padding: 20px 30px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 12px;
+align-self: stretch;
+border-radius: 12px;
+border: 1px dashed var(--system-stroke-2, #DADCE0);
+background: var(--system-background, #F6F8FA);
+}
+.PaddAssigmnetButton{
+  display: flex;
+width: 50px;
+height: 50px;
+padding: 7.143px;
+justify-content: center;
+align-items: center;
+gap: 7.143px;
+border-radius: 51.429px;
+background: #FFF;
+}
+.PsubHeadNewAssigemnt h4{
+  color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.PsubHeadandInfo{
+  color: var(--text-100, #1C4980);
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+align-self: stretch;
+}
+
+.phone-container{
+  margin: auto;
+  display: none;
+}
+.navbarP{
+  width: 100%;
+}
+.popup-container-child{
+  margin: auto;
+  background: white;
+  width: 40%;
+  position: fixed;
+  right: 25%;
+  bottom: 0;
+  border-radius: 25px;
+  animation: slideup .5s ease-in-out;
+}
+
+@keyframes slideup{
+  0%{
+    transform: translateY(100%);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .phone-container{
+    display: block;
+  }
+
+  .normal-view-container{
+    display: none;
+  }
 }
