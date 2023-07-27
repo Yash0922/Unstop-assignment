@@ -29,7 +29,7 @@ function PhoneMyAssessment(props) {
    
     return (
         <div id='PhonemainCntainer' className={showAssessmentOverview ? 'shifted' : ''}>
-            {showAssessmentOverview && <PhoneAssessmentOverview />}
+            {showAssessmentOverview && <PhoneAssessmentOverview  />}
             <div className="MyAssessmentSection" >
             
                 <div className="headingP">

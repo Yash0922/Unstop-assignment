@@ -1,11 +1,21 @@
-import React from 'react';
+import React,{useState} from 'react';
 import SideMenu from "../Logo/segment.svg"
+import SideMenuPhone from './SideMenuPhone';
 function PhoneNavbar(props) {
+    const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
+
+    const toggleSideMenu = () => {
+      setIsSideMenuOpen(!isSideMenuOpen);
+    };
+    const CloseSideMenu = () => {
+        setIsSideMenuOpen(false);
+      };
     return (
         <div>
             <nav className='navbarP'>
+            {isSideMenuOpen && <SideMenuPhone  isSideMenuOpen={isSideMenuOpen} close={CloseSideMenu}/>}
                 <div className="Assessmentphone">
-                    <div className="sidemenubutton">
+                    <div className="sidemenubutton" onClick={toggleSideMenu}>
                         <img src={SideMenu} alt="" />
                     </div>
                     <div className='HeadingPhone'>
